@@ -1,0 +1,16 @@
+#!/bin/bash
+
+parar="n"
+nomeUsuario=""
+
+while [ $parar = "n" ] do
+	echo "`clear`"
+
+	echo "Nome do usuário: "
+	read $nomeUsuario
+
+	echo "O nome desejado era $nomeUsuario? (s/n)"
+	read $parar	
+done
+
+echo "`adduser $nomeUsuario`"
