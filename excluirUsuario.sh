@@ -3,7 +3,7 @@
 parar="n"
 nomeUsuario=""
 
-while [ $parar = "n" ] do
+while [ $parar -eq "n" ] do
 	echo "`clear`"
 
 	echo "Nome do usuário: "

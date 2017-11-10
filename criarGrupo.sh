@@ -3,7 +3,7 @@
 parar 	  = "n"
 nomeGrupo = ""
 
-while [ $parar = "n" ] do
+while [ $parar -eq "n" ] do
 	echo "`clear`"
 
 	echo "Nome do grupo: "

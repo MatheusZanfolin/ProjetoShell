@@ -2,7 +2,7 @@
 
 parar="n"
 nomeUsuario=""
-nomeDiretorio=""
+nomeGrupo=""
 
 while [ $parar -eq "n" ] do
 	echo "`clear`"
@@ -19,11 +19,11 @@ $parar="n"
 while [ $parar -eq "n" ] do
 	echo "`clear`"
 
-	echo "Nome do arquivo: "
+	echo "Nome do grupo: "
 	read $nomeDiretorio
 
-	echo "O nome desejado era $nomeDiretorio? (s/n)"
+	echo "O nome desejado era $nomeGrupo? (s/n)"
 	read $parar	
 done
 
-echo "`chown $nomeUsuario $nomeDiretorio`"
+echo "`chgrp $nomeUsuario $nomeGrupo`"

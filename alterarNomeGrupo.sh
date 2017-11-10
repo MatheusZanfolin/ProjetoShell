@@ -4,7 +4,7 @@ parar="n"
 nomeGrupo=""
 novoNomeGrupo=""
 
-while [ $parar eq "n" ] do
+while [ $parar -eq "n" ] do
 	echo "`clear`"
 
 	echo "Nome atual do grupo: "
@@ -16,7 +16,7 @@ done
 
 $parar="n"
 
-while [ $parar eq "n" ] do
+while [ $parar -eq "n" ] do
 	echo "`clear`"
 
 	echo "Nome do grupo: "

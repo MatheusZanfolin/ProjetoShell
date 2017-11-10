@@ -3,7 +3,7 @@
 continuar = true
 opcao	  = 0
 
-while [ $continuar = true ]
+while [ $continuar -eq true ]
 do
 	echo "`clear`"
 	echo "=================MENU================="
