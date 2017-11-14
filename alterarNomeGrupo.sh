@@ -10,7 +10,7 @@ while [ $parar -eq "n" ] do
 	echo "Nome atual do grupo: "
 	read $nomeGrupo
 
-	echo "O nome desejado era $nomeGrupo? (s/n)"
+	echo "O nome atual desejado era $nomeGrupo? (s/n)"
 	read $parar	
 done
 

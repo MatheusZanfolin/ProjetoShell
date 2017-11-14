@@ -14,3 +14,4 @@ while [ $parar -eq "n" ] do
 done
 
 echo "`passwd $nomeUsuario`"
+
