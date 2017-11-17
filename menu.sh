@@ -1,10 +1,7 @@
 #!/bin/bash
-
-continuar = true
-opcao	  = 0
-
-while [ $continuar -eq true ]
-do
+opcao=""
+parar="n"
+while [ $parar == "n" ]; do
 	echo "`clear`"
 	echo "=================MENU================="
 	echo ""
@@ -14,24 +11,23 @@ do
 	echo "Usuario"
 	echo "	(c)Criar usuario"
 	echo "	(d)Atribuir senha a usuario"
-	echo "	(e)Excuir usuario"
+	echo "	(e)Excluir usuario"
 	echo "Permissoes"
 	echo "	(f)Atribuir owner a arquivo"
 	echo "	(g)Atribuir grupo owner a arquivo"
 	echo "	(h)Atribuir permissoes a um usuário a um arquivo"
-	echo ""
+	echo "	(i)Sair"
 	echo "Digite a letra da operacao desejada: "
-	read $opcao
-
+	read opcao
 	case $opcao in
-		a) echo "`./criarGrupo.sh`" ;;
-		b) echo "`./alterarNomeGrupo.sh`" ;;
-		c) echo "`./criarUsuario.sh`" ;;
-		d) echo "`./atribuirSenha.sh`" ;;
-		e) echo "`./excluirUsuario.sh`" ;;
-		f) echo "`./atribuirOwner.sh`" ;;
-		g) echo "`./atribuirGrupo.sh`" ;;
-		h) echo "`./atribuirPermissoes.sh`" ;;
-	esac
+		a)./criarGrupo.sh;;
+		b)./alterarNomeGrupo.sh;;
+		c)./criarUsuario.sh;;
+		d)./atribuirSenha.sh;;
+		e)./excluirUsuario.sh;;
+		f)./atribuirOwner.sh;;
+		g)./atribuirGrupo.sh;;
+		h)./atribuirPermissoes.sh;;
+		i)parar="s";;
+ 	esac
 done
-
